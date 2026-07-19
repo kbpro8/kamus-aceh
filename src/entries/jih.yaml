@@ -1,19 +1,21 @@
-headword: "jih"
-jawi: "جيه"
-ipa: "/jih/"
-part_of_speech: "kata ganti"
+headword: jih
+jawi: ''
+alt_spelling: []
+ipa: ''
+part_of_speech: ''
 definitions:
-  - meaning_id: "dia; ia (kata ganti orang ketiga tunggal)"
-    meaning_en: "he; she; it (third-person singular pronoun)"
-examples:
-  - aceh: "Jih hana trôh uroe nyan."
-    id: "Dia tidak datang hari itu."
-    en: "He/she did not come that day."
-  - aceh: "Jih keunong saket."
-    id: "Dia sakit."
-    en: "He/she is sick."
-related_words: ["lon", "droeneuh", "gobnyan"]
-dialect_notes: "Bentuk hormat untuk orang ketiga adalah 'gobnyan'."
-source: "Kamus Aceh–Indonesia, Pusat Bahasa 2001"
-date_added: "2025-01-01"
-contributor: "Tim Kamus Aceh (contoh)"
+- meaning_id: dia
+  meaning_en: he, she (same age or younger than speaker)
+examples: []
+etymology: ''
+related_words:
+- di-
+- i-
+- ji-
+dialect_notes: ''
+source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
+  Pacific Linguistics C-151, 1999, p. 11.'
+date_added: '2026-07-20'
+contributor: AI-extracted — needs human review
+extraction_notes: PDF text-layer mismatch in the Acehnese form; copied from the searchable PDF text layer and needs
+  visual verification against printed p. 11.

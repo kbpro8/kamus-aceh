@@ -4,7 +4,7 @@ title: Daftar A–Z
 description: Telusuri semua entri kamus Aceh secara alfabetis.
 permalink: /browse/
 ---
-<h1 style="font-size:1.6rem;color:var(--accent);margin-bottom:1.5rem;">Daftar A–Z</h1>
+<h1 class="page-title">Daftar A–Z</h1>
 
 {% set byLetter = entries | byLetter %}
 
@@ -20,8 +20,8 @@ permalink: /browse/
   <ul class="entry-list">
     {% for entry in items %}
     <li>
-      <a href="{{ ('/entries/' + (entry.headword | slugify) + '/') | url }}">{{ entry.headword }}</a>
-      <span style="color:var(--muted);font-size:.85rem;"> — {{ entry.definitions[0].meaning_id }}</span>
+      <a href="{{ ('/entries/' + entry.fileSlug + '/') | url }}">{{ entry.headword }}</a>
+      <span class="gloss"> — {{ entry.definitions[0].meaning_id }}</span>
     </li>
     {% endfor %}
   </ul>

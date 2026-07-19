@@ -1,0 +1,82 @@
+---
+pagination:
+  data: entries
+  size: 1
+  alias: entry
+permalink: "/entries/{{ entry.fileSlug }}/"
+layout: base.njk
+eleventyComputed:
+  title: "{{ entry.headword }}"
+---
+<article class="entry-detail" data-pagefind-body>
+  <div class="entry-header">
+    <div class="headword-block">
+      <h1 class="headword" data-pagefind-meta="title">{{ entry.headword }}</h1>
+      {% if entry.jawi %}
+      <span class="headword-jawi" lang="ar" dir="rtl">{{ entry.jawi }}</span>
+      {% endif %}
+    </div>
+    <div class="entry-meta">
+      {% if entry.ipa %}<span class="meta-ipa">{{ entry.ipa }}</span>{% endif %}
+      {% if entry.part_of_speech %}<span class="meta-tag">{{ entry.part_of_speech }}</span>{% endif %}
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  {% if entry.definitions %}
+  <ul class="def-list">
+    {% for def in entry.definitions %}
+    <li class="def-item">
+      <div class="def-num">Definisi {{ loop.index }}</div>
+      <div class="def-id">🇮🇩 {{ def.meaning_id }}</div>
+      <div class="def-en">🇬🇧 {{ def.meaning_en }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if entry.examples and entry.examples.length %}
+  <div class="entry-section">
+    <div class="entry-section-title">Contoh / Examples</div>
+    {% for ex in entry.examples %}
+    <div class="example-block">
+      <div class="ex-aceh">{{ ex.aceh }}</div>
+      {% if ex.id %}<div class="ex-id">🇮🇩 {{ ex.id }}</div>{% endif %}
+      {% if ex.en %}<div class="ex-en">🇬🇧 {{ ex.en }}</div>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if entry.etymology %}
+  <div class="entry-section">
+    <div class="entry-section-title">Etimologi</div>
+    <p>{{ entry.etymology }}</p>
+  </div>
+  {% endif %}
+
+  {% if entry.dialect_notes %}
+  <div class="entry-section">
+    <div class="entry-section-title">Catatan Dialek</div>
+    <p>{{ entry.dialect_notes }}</p>
+  </div>
+  {% endif %}
+
+  {% if entry.related_words and entry.related_words.length %}
+  <div class="entry-section">
+    <div class="entry-section-title">Kata Terkait</div>
+    <div class="related-words">
+      {% for slug in entry.related_words %}
+      <a href="{{ ('/entries/' + slug + '/') | url }}">{{ slug }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="entry-source">
+    {% if entry.source %}<span>Sumber: {{ entry.source }}</span>{% endif %}
+    {% if entry.contributor %}<span>Kontributor: {{ entry.contributor }}</span>{% endif %}
+    {% if entry.date_added %}<span>{{ entry.date_added }}</span>{% endif %}
+  </div>
+</article>

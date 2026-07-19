@@ -1,0 +1,54 @@
+
+I have books attached here that contains Acehnese-language content (words, phrases, and/or a wordlist embedded in running text). I need you to do a **complete, exhaustive scan** of this book and turn every distinct Acehnese word you find into a dictionary entry for my `kamus-aceh` project (an Eleventy-based static dictionary, entries stored as one YAML file per headword under `src/entries/`).
+
+## Scope and non-negotiable rules
+
+- **Do not skip any words.** Process the entire document from the first page to the last page, including footnotes, glossaries, appendices, captions, and tables — not just the main body text.
+- Work through the book in **sequential chunks** (e.g., page-by-page or section-by-section) rather than trying to read it all at once, so nothing gets dropped due to context limits. Keep a running log of which pages/sections have been processed.
+- If the book is scanned/image-based rather than text, OCR it first and flag any pages where OCR confidence is low so I can manually review them.
+- Distinguish Acehnese words from Indonesian, English, Dutch, or Arabic loanwords/quotations that may appear in the same text — only extract genuine Acehnese vocabulary. If a word's language is ambiguous, include it but flag it as `"language_uncertain: true"` rather than silently dropping it.
+- Deduplicate: if the same headword appears multiple times across the book, merge into a single entry and combine/reconcile definitions, examples, and page references rather than creating duplicate files.
+- Preserve spelling variants as they appear in the source (older orthography, colonial-era transliterations, etc.) — do not silently "correct" spelling. If you normalize a spelling for the filename/slug, keep the original spelling as an `alt_spelling` field.
+- If the book itself contains Jawi (Arabic) script alongside Latin transliterations, capture both directly from the source into the `jawi` field. If the book is Latin-only, leave `jawi` blank rather than inventing a transliteration, unless you flag any AI-supplied Jawi as unverified per the rule below.
+
+## Output format — one YAML file per headword
+
+For each extracted word, create a file at `src/entries/<slug>.yaml` (slug = lowercase, hyphenated version of the headword) with this structure:
+
+```yaml
+headword: ""            # the Acehnese word as it appears in the source, Latin script
+jawi: ""                 # the same word rendered in Jawi (Arabic) script — only fill in if the book
+                          # itself gives a Jawi form, OR you are highly confident in a standard
+                          # Jawi transliteration; if uncertain, leave blank and note it in extraction_notes
+alt_spelling: []         # any variant spellings found elsewhere in the book
+ipa: ""                  # leave blank if not given in the source — do not invent
+part_of_speech: ""       # only fill in if stated or clearly inferable from context; otherwise leave blank
+definitions:
+  - meaning_id: ""        # Indonesian gloss, only if the book provides or clearly implies one
+    meaning_en: ""        # English gloss, only if the book provides or clearly implies one
+examples:
+  - aceh: ""              # example sentence/phrase from the book, verbatim, Latin script
+    jawi: ""               # same example sentence in Jawi script, only if source provides it or you
+                            # are highly confident in the transliteration; otherwise leave blank
+    id: ""
+    en: ""
+etymology: ""             # only if the book discusses word origin
+related_words: []
+dialect_notes: ""
+source: "<full citation of the book: author, title, year, page number(s)>"
+date_added: "<today's date>"
+contributor: "AI-extracted — needs human review"
+extraction_notes: ""      # flag anything uncertain: ambiguous language, unclear meaning, OCR uncertainty,
+                          # unverified Jawi transliteration, etc.
+```
+
+**Jawi-specific rule:** Never guess a Jawi spelling with low confidence just to fill the field — an incorrect Jawi transliteration is worse than a blank one. If you supply a Jawi form that is not directly copied from the source book, always mark it in `extraction_notes` as "Jawi transliteration is AI-generated, not from source — needs verification by a Jawi-literate reviewer."
+
+**Critical honesty rule:** Do not fabricate definitions, IPA, or part-of-speech if the book doesn't provide them. Leave those fields blank rather than guessing, and never invent an English/Indonesian gloss that isn't grounded in what the book actually says (or a definition you are highly confident about from general Acehnese-language knowledge — in which case set `contributor: "AI-inferred, not from source — needs verification"` instead). Every entry must always carry an accurate page citation in `source`.
+
+## Process and reporting
+
+1. At the end, produce a summary report: total unique headwords extracted, total entries flagged for human review (ambiguous language, uncertain OCR, AI-inferred definitions), and a checklist confirming every page of the book was covered with no gaps.
+2. Save all generated YAML files into `src/entries/` following the existing `kamus-aceh` repo structure. Do not overwrite the `_template.yaml` file or any existing hand-written entries — if a headword already exists, merge into it instead of replacing it.
+
+---

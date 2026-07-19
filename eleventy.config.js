@@ -1,24 +1,40 @@
 const yaml = require("js-yaml");
+const path = require("path");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
   eleventyConfig.addPassthroughCopy("src/assets");
 
-  // Slugify a headword for URL use
+  // Build entries collection; attach fileSlug (filename without ext) to each item
+  eleventyConfig.addCollection("entries", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("src/entries/*.yaml")
+      .filter((item) => !path.basename(item.inputPath).startsWith("_"))
+      .map((item) => {
+        item.data.fileSlug = path.basename(item.inputPath, ".yaml");
+        return item;
+      })
+      .sort((a, b) =>
+        (a.data.headword || "").localeCompare(b.data.headword || "", "id")
+      );
+  });
+
+  // Slugify — kept for display use but no longer used for permalinks
   eleventyConfig.addFilter("slugify", (str) =>
     (str || "")
       .toLowerCase()
       .normalize("NFD")
-      .replace(/[̀-ͯ]/g, "")   // strip diacritics after decomposition
+      .replace(/[̀-ͯ]/g, "")
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, "")
   );
 
-  // Group entries by first letter for A-Z index
+  // Group flat entry objects by first letter for A-Z index
   eleventyConfig.addFilter("byLetter", (entries) => {
     const groups = {};
     for (const entry of entries) {
-      const letter = (entry.headword || "?")[0].toUpperCase();
+      const hw = (entry.headword) || "?";
+      const letter = hw[0].toUpperCase();
       if (!groups[letter]) groups[letter] = [];
       groups[letter].push(entry);
     }

@@ -20,7 +20,7 @@ pagefind: true
 
 <div class="stats-bar">
   <div class="stat">
-    <div class="stat-num">{{ collections.entries | length }}</div>
+    <div class="stat-num">{{ entries | length }}</div>
     <div class="stat-label">Entri</div>
   </div>
   <div class="stat">
@@ -36,12 +36,12 @@ pagefind: true
 <p class="section-label">Contoh kata</p>
 
 <div class="featured-grid">
-  {% for entry in collections.entries | randomPick(6) %}
-  <a class="entry-card" href="{{ ('/entries/' + (entry.data.headword | slugify) + '/') | url }}">
-    <div class="card-hw">{{ entry.data.headword }}</div>
-    {% if entry.data.jawi %}<div class="card-jawi">{{ entry.data.jawi }}</div>{% endif %}
-    <div class="card-pos">{{ entry.data.part_of_speech }}</div>
-    <div class="card-gloss">{{ entry.data.definitions[0].meaning_id }}</div>
+  {% for entry in entries | randomPick(6) %}
+  <a class="entry-card" href="{{ ('/entries/' + entry.fileSlug + '/') | url }}">
+    <div class="card-hw">{{ entry.headword }}</div>
+    {% if entry.jawi %}<div class="card-jawi">{{ entry.jawi }}</div>{% endif %}
+    <div class="card-pos">{{ entry.part_of_speech }}</div>
+    <div class="card-gloss">{{ entry.definitions[0].meaning_id }}</div>
   </a>
   {% endfor %}
 </div>

@@ -1,19 +1,30 @@
-headword: "beuet"
-jawi: "بوءيت"
-ipa: "/bɯt/"
-part_of_speech: "kk"
+headword: beuet
+jawi: ''
+alt_spelling: []
+ipa: ''
+part_of_speech: ''
 definitions:
-  - meaning_id: "membaca; mengaji"
-    meaning_en: "to read; to recite (especially the Quran)"
-examples:
-  - aceh: "Aneuëk nyan beuet Quran tiap uroe."
-    id: "Anak itu membaca Quran setiap hari."
-    en: "That child reads the Quran every day."
-  - aceh: "Gopnyan beuet kitab di dayah."
-    id: "Dia membaca kitab di pesantren."
-    en: "He reads religious texts at the Islamic boarding school."
-related_words: ["kitab", "dayah"]
-etymology: "Dari bahasa Arab qara'a (قرأ) melalui jalur Melayu"
-source: "Kamus Aceh–Indonesia, Pusat Bahasa 2001"
-date_added: "2025-01-01"
-contributor: "Tim Kamus Aceh (contoh)"
+- meaning_id: mengaji
+  meaning_en: recite
+- meaning_id: angkat
+  meaning_en: lift, raise
+- meaning_id: baca
+  meaning_en: read
+- meaning_id: belajar
+  meaning_en: study, learn
+examples: []
+etymology: ''
+related_words:
+- baca
+- ber
+- beuot
+- bôt
+- grak
+- meurunoe
+dialect_notes: ''
+source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
+  Pacific Linguistics C-151, 1999, p. 24; p. 45; p. 55; p. 57; p. 58.'
+date_added: '2026-07-20'
+contributor: AI-extracted — needs human review
+extraction_notes: PDF text-layer mismatch in the Acehnese form; copied from the searchable PDF text layer and needs
+  visual verification against printed p. 45.

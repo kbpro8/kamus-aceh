@@ -9,7 +9,9 @@ module.exports = function () {
     .filter((f) => f.endsWith(".yaml") && !f.startsWith("_"))
     .map((f) => {
       const raw = fs.readFileSync(path.join(dir, f), "utf8");
-      return yaml.load(raw);
+      const data = yaml.load(raw);
+      data.fileSlug = path.basename(f, ".yaml");
+      return data;
     })
-    .sort((a, b) => a.headword.localeCompare(b.headword, "id"));
+    .sort((a, b) => (a.headword || "").localeCompare(b.headword || "", "id"));
 };
