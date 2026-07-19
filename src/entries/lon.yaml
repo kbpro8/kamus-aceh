@@ -4,7 +4,7 @@ ipa: "/lon/"
 part_of_speech: "kata ganti"
 definitions:
   - meaning_id: "saya; aku (kata ganti orang pertama tunggal)"
-    meaning_en: "I; me (first-person singular pronoun)"
+    meaning_en: "I; me (first-person singular pronoun, familiar)"
 examples:
   - aceh: "Lon kheun nyan bak droeneuh."
     id: "Saya katakan itu kepada Anda."
@@ -12,7 +12,8 @@ examples:
   - aceh: "Lon hana teuingat."
     id: "Saya tidak ingat."
     en: "I don't remember."
-dialect_notes: "Dalam dialek pesisir utara juga dikenal bentuk 'lôn'. Digunakan dalam konteks formal maupun informal."
-source: "Kamus Aceh–Indonesia, Pusat Bahasa 2001"
+dialect_notes: "Juga ditulis 'lôn'. Bentuk penuh yang lebih formal adalah 'ulon' atau 'ulôn'."
+related_words: ["ulon", "droeneuh"]
+source: "Kamus Aceh–Indonesia, Pusat Bahasa 2001; Durie & Daud (1999)"
 date_added: "2025-01-01"
 contributor: "Tim Kamus Aceh (contoh)"
