@@ -1,0 +1,15 @@
+headword: "meunasah"
+ipa: "/mɯ.ˈna.sah/"
+part_of_speech: "kb"
+definitions:
+  - meaning_id: "balai pertemuan desa sekaligus tempat ibadah dan pendidikan agama di Aceh"
+    meaning_en: "village hall that also serves as a mosque and Islamic education centre; the basic social institution of an Acehnese village"
+examples:
+  - aceh: "Ureuëng gampông beudoh u meunasah wèktu Magrib."
+    id: "Warga kampung pergi ke meunasah waktu Maghrib."
+    en: "The villagers go to the meunasah at Maghrib time."
+etymology: "Dari bahasa Arab madrasah (مَدْرَسَة) melalui adaptasi fonetik Aceh"
+dialect_notes: "Juga ditulis 'menasah' dalam beberapa teks kolonial Belanda."
+source: "Snouck Hurgronje, De Atjèhers (1893–1894)"
+date_added: "2025-01-01"
+contributor: "Tim Kamus Aceh (contoh)"

@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: Beranda
+description: Kamus Aceh — kamus digital Bahasa Aceh–Indonesia–Inggris, bebas dan terbuka.
+pagefind: true
+---
+<section class="hero">
+  <h1>Kamus Aceh</h1>
+  <p>Kamus digital Bahasa Aceh – Indonesia – Inggris</p>
+</section>
+
+<div class="search-wrap">
+  <div id="search"></div>
+</div>
+
+<section>
+  <h2 style="font-size:1rem;font-family:system-ui;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem;">
+    Contoh kata
+  </h2>
+  <div class="featured-grid">
+    {% for entry in entries | randomPick(6) %}
+    <a class="entry-card" href="{{ ('/entries/' + (entry.headword | slugify) + '/') | url }}" style="display:block;text-decoration:none;color:inherit;">
+      <div class="hw">{{ entry.headword }}</div>
+      <div class="pos">{{ entry.part_of_speech }}</div>
+      <div class="gloss">{{ entry.definitions[0].meaning_id }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</section>

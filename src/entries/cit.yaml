@@ -1,0 +1,17 @@
+headword: "cit"
+ipa: "/tɕit/"
+part_of_speech: "partikel"
+definitions:
+  - meaning_id: "juga; pun (partikel penegas yang menambahkan makna inklusif)"
+    meaning_en: "also; too; as well (emphatic/inclusive particle)"
+examples:
+  - aceh: "Lon cit hana sabe."
+    id: "Saya juga tidak setuju."
+    en: "I don't agree either."
+  - aceh: "Gopnyan cit trôh."
+    id: "Beliau pun datang."
+    en: "He/she came too."
+dialect_notes: "Partikel ini sangat umum dan sering digunakan dalam percakapan sehari-hari."
+source: "Kamus Aceh–Indonesia, Pusat Bahasa 2001"
+date_added: "2025-01-01"
+contributor: "Tim Kamus Aceh (contoh)"

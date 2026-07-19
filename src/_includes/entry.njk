@@ -1,0 +1,68 @@
+---
+layout: base.njk
+---
+<article class="entry-detail" data-pagefind-body>
+  <div class="entry-header">
+    <h1 class="headword" data-pagefind-meta="headword">{{ headword }}</h1>
+    <div class="entry-meta">
+      {% if ipa %}<span>{{ ipa }}</span>{% endif %}
+      {% if part_of_speech %}<span>{{ part_of_speech }}</span>{% endif %}
+    </div>
+  </div>
+
+  {% if definitions %}
+  <section class="definitions">
+    {% for def in definitions %}
+    <div class="definition-item">
+      <div class="def-number">{{ loop.index }}</div>
+      <div class="def-id">🇮🇩 {{ def.meaning_id }}</div>
+      <div class="def-en">🇬🇧 {{ def.meaning_en }}</div>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if examples and examples.length %}
+  <section class="examples">
+    <h3>Contoh / Examples</h3>
+    {% for ex in examples %}
+    <div class="example-block">
+      <div class="example-aceh">{{ ex.aceh }}</div>
+      {% if ex.id %}<div class="example-id">{{ ex.id }}</div>{% endif %}
+      {% if ex.en %}<div class="example-en">{{ ex.en }}</div>{% endif %}
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if etymology %}
+  <section class="entry-section">
+    <h3>Etimologi</h3>
+    <p>{{ etymology }}</p>
+  </section>
+  {% endif %}
+
+  {% if dialect_notes %}
+  <section class="entry-section">
+    <h3>Catatan Dialek</h3>
+    <p>{{ dialect_notes }}</p>
+  </section>
+  {% endif %}
+
+  {% if related_words and related_words.length %}
+  <section class="entry-section">
+    <h3>Kata Terkait</h3>
+    <div class="related-words">
+      {% for slug in related_words %}
+      <a href="{{ ('/entries/' + slug + '/') | url }}">{{ slug }}</a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <div class="entry-source">
+    {% if source %}<span>Sumber: {{ source }}</span> &middot; {% endif %}
+    {% if contributor %}<span>Kontributor: {{ contributor }}</span> &middot; {% endif %}
+    {% if date_added %}<span>Ditambahkan: {{ date_added }}</span>{% endif %}
+  </div>
+</article>

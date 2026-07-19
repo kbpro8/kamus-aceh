@@ -1,0 +1,18 @@
+headword: "droeneuh"
+ipa: "/dro.ˈnɯh/"
+part_of_speech: "kata ganti"
+definitions:
+  - meaning_id: "Anda; kamu (kata ganti orang kedua tunggal, sopan)"
+    meaning_en: "you (second-person singular, polite/formal)"
+examples:
+  - aceh: "Droeneuh di mana?"
+    id: "Anda di mana?"
+    en: "Where are you?"
+  - aceh: "Trôh droeneuh dari manakeuh?"
+    id: "Dari mana Anda datang?"
+    en: "Where did you come from?"
+related_words: ["kah", "lon"]
+dialect_notes: "Bentuk yang lebih santai adalah 'kah' (untuk teman sebaya atau yang lebih muda). 'Droeneuh' bersifat hormat."
+source: "Kamus Aceh–Indonesia, Pusat Bahasa 2001"
+date_added: "2025-01-01"
+contributor: "Tim Kamus Aceh (contoh)"

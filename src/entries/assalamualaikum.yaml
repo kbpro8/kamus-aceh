@@ -1,0 +1,15 @@
+headword: "assalamualaikum"
+ipa: "/as.sa.la.mu.a.ˈlai.kum/"
+part_of_speech: "seruan"
+definitions:
+  - meaning_id: "salam Islam: 'semoga keselamatan terlimpah atasmu' — ucapan salam standar dalam masyarakat Aceh"
+    meaning_en: "Islamic greeting: 'peace be upon you' — the standard greeting in Acehnese Muslim society"
+examples:
+  - aceh: "Assalamualaikum, ba droeneuh?"
+    id: "Assalamualaikum, apa kabar?"
+    en: "Peace be upon you — how are you?"
+related_words: ["saleum", "waalaikumsalam"]
+etymology: "Dari bahasa Arab: السَّلَامُ عَلَيْكُمْ (as-salāmu ʿalaykum)"
+source: "Al-Quran dan hadis; digunakan luas di seluruh dunia Muslim"
+date_added: "2025-01-01"
+contributor: "Tim Kamus Aceh (contoh)"

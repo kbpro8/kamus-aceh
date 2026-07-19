@@ -1,0 +1,18 @@
+headword: "beuet"
+ipa: "/bɯt/"
+part_of_speech: "kk"
+definitions:
+  - meaning_id: "membaca; mengaji"
+    meaning_en: "to read; to recite (especially the Quran)"
+examples:
+  - aceh: "Aneuëk nyan beuet Quran tiap uroe."
+    id: "Anak itu membaca Quran setiap hari."
+    en: "That child reads the Quran every day."
+  - aceh: "Gopnyan beuet kitab di dayah."
+    id: "Dia membaca kitab di pesantren."
+    en: "He reads religious texts at the Islamic boarding school."
+related_words: ["kitab", "dayah"]
+etymology: "Dari bahasa Arab qara'a (قرأ) melalui jalur Melayu"
+source: "Kamus Aceh–Indonesia, Pusat Bahasa 2001"
+date_added: "2025-01-01"
+contributor: "Tim Kamus Aceh (contoh)"

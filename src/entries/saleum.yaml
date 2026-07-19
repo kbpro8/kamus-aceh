@@ -1,0 +1,14 @@
+headword: "saleum"
+ipa: "/sa.ˈlɯm/"
+part_of_speech: "kb / kk"
+definitions:
+  - meaning_id: "salam; ucapan selamat atau hormat"
+    meaning_en: "greeting; salutation"
+examples:
+  - aceh: "Bèk lupa bri saleum bak gurèe."
+    id: "Jangan lupa memberi salam kepada guru."
+    en: "Don't forget to greet the teacher."
+related_words: ["assalamualaikum"]
+source: "Kamus Aceh–Indonesia, Pusat Bahasa 2001"
+date_added: "2025-01-01"
+contributor: "Tim Kamus Aceh (contoh)"

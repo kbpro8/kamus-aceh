@@ -1,0 +1,17 @@
+headword: "neuheun"
+ipa: "/nɯ.ˈhɯn/"
+part_of_speech: "kk"
+definitions:
+  - meaning_id: "memasak; menyiapkan makanan"
+    meaning_en: "to cook; to prepare food"
+examples:
+  - aceh: "Mak lon neuheun bu tiap uroe."
+    id: "Ibu saya memasak nasi setiap hari."
+    en: "My mother cooks rice every day."
+  - aceh: "Pajan droeneuh neuheun lauk nyan?"
+    id: "Kapan Anda memasak lauk itu?"
+    en: "When did you cook that dish?"
+related_words: ["bu", "dapu"]
+source: "Kamus Aceh–Indonesia, Pusat Bahasa 2001"
+date_added: "2025-01-01"
+contributor: "Tim Kamus Aceh (contoh)"

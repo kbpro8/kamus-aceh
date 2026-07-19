@@ -1,0 +1,161 @@
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #fdfcf8;
+  --surface:   #f4f1e8;
+  --border:    #d8d0b8;
+  --text:      #2c2614;
+  --muted:     #706654;
+  --accent:    #8b4513;   /* saddle brown – Acehnese earthy palette */
+  --accent2:   #c87941;
+  --link:      #6b4226;
+  --font-body: "Georgia", serif;
+  --font-ui:   system-ui, sans-serif;
+  --radius:    6px;
+  --max-w:     720px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:      #1a1710;
+    --surface: #252218;
+    --border:  #3d3828;
+    --text:    #e8e0cc;
+    --muted:   #a09070;
+    --accent:  #d4895a;
+    --accent2: #e0a870;
+    --link:    #c8916c;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  padding: 0 1rem;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Layout ── */
+.site-header {
+  border-bottom: 2px solid var(--accent);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+.site-header-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.site-title { font-size: 1.5rem; font-weight: bold; color: var(--accent); }
+.site-nav { font-family: var(--font-ui); font-size: 0.9rem; }
+.site-nav a { margin-right: 1.2rem; color: var(--muted); }
+.site-nav a:hover { color: var(--accent); }
+
+main {
+  max-width: var(--max-w);
+  margin: 0 auto 4rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: var(--font-ui);
+}
+
+/* ── Homepage ── */
+.hero { text-align: center; padding: 3rem 0 2rem; }
+.hero h1 { font-size: 2.2rem; color: var(--accent); }
+.hero p  { color: var(--muted); margin-top: 0.5rem; font-size: 1.05rem; }
+
+/* ── Search ── */
+.search-wrap { margin: 2rem 0; }
+#search { width: 100%; padding: 0.7rem 1rem; font-size: 1rem;
+  border: 2px solid var(--border); border-radius: var(--radius);
+  background: var(--surface); color: var(--text); font-family: var(--font-body); }
+#search:focus { outline: none; border-color: var(--accent); }
+
+/* Pagefind UI overrides */
+.pagefind-ui__search-input { font-family: var(--font-body) !important; }
+.pagefind-ui__result-title { color: var(--link) !important; }
+
+/* ── Entry detail ── */
+.entry-header { margin-bottom: 1.5rem; }
+.headword { font-size: 2.4rem; color: var(--accent); font-style: italic; }
+.entry-meta { font-family: var(--font-ui); font-size: 0.88rem; color: var(--muted);
+  display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.3rem; }
+.entry-meta span { background: var(--surface); padding: 0.15rem 0.6rem;
+  border-radius: 999px; border: 1px solid var(--border); }
+
+.definitions { margin-top: 1.5rem; }
+.definition-item { margin-bottom: 1.2rem; padding-left: 1rem;
+  border-left: 3px solid var(--accent2); }
+.def-number { font-family: var(--font-ui); font-size: 0.8rem; color: var(--muted); }
+.def-id { font-size: 1.05rem; }
+.def-en { color: var(--muted); font-size: 0.95rem; }
+
+.examples { margin-top: 1.5rem; }
+.examples h3 { font-size: 0.85rem; font-family: var(--font-ui);
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.8rem; }
+.example-block { background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 0.9rem 1rem; margin-bottom: 0.8rem; }
+.example-aceh { font-style: italic; font-size: 1.05rem; }
+.example-id   { color: var(--muted); font-size: 0.9rem; }
+.example-en   { color: var(--muted); font-size: 0.88rem; }
+
+.entry-section { margin-top: 1.5rem; }
+.entry-section h3 { font-size: 0.85rem; font-family: var(--font-ui);
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.4rem; }
+.related-words { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.related-words a { background: var(--surface); border: 1px solid var(--border);
+  border-radius: 999px; padding: 0.2rem 0.7rem; font-size: 0.9rem; }
+
+.entry-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+  font-size: 0.8rem; color: var(--muted); font-family: var(--font-ui); }
+
+/* ── Browse A-Z ── */
+.az-nav { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 2rem; font-family: var(--font-ui); }
+.az-nav a { width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border); border-radius: var(--radius); font-size: 0.85rem; }
+.az-nav a:hover { background: var(--surface); }
+
+.letter-group { margin-bottom: 2rem; }
+.letter-heading { font-size: 1.6rem; color: var(--accent); font-weight: bold;
+  border-bottom: 1px solid var(--border); margin-bottom: 0.6rem; }
+.entry-list { list-style: none; columns: 2; }
+.entry-list li { padding: 0.15rem 0; break-inside: avoid; }
+
+/* ── Featured cards ── */
+.featured-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0; }
+.entry-card { background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1rem; }
+.entry-card .hw { font-style: italic; font-size: 1.2rem; color: var(--accent); }
+.entry-card .pos { font-size: 0.75rem; color: var(--muted); font-family: var(--font-ui); }
+.entry-card .gloss { font-size: 0.9rem; margin-top: 0.3rem; }
+
+/* ── About page ── */
+.prose h2 { font-size: 1.3rem; margin: 1.5rem 0 0.5rem; color: var(--accent); }
+.prose p  { margin-bottom: 0.8rem; }
+.prose ul { padding-left: 1.5rem; margin-bottom: 0.8rem; }
+.prose code { background: var(--surface); padding: 0.1em 0.4em;
+  border-radius: 3px; font-size: 0.88em; }
+.prose pre { background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1rem; overflow-x: auto; margin-bottom: 1rem; }
+.prose pre code { background: none; padding: 0; }
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .headword { font-size: 1.8rem; }
+  .entry-list { columns: 1; }
+  .featured-grid { grid-template-columns: 1fr; }
+}

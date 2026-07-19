@@ -1,0 +1,20 @@
+# Salin file ini untuk entri baru. Hapus komentar sebelum membuat PR.
+headword: ""             # Kata dalam Bahasa Aceh (wajib)
+ipa: ""                  # Transkripsi IPA, misal /ˈblah/ (opsional)
+part_of_speech: ""       # kb / kk / ks / keterangan / partikel / dll.
+definitions:
+  - meaning_id: ""       # Arti dalam Bahasa Indonesia
+    meaning_en: ""       # Meaning in English
+  # Tambahkan lebih banyak arti jika ada:
+  # - meaning_id: ""
+  #   meaning_en: ""
+examples:
+  - aceh: ""             # Kalimat contoh dalam Bahasa Aceh
+    id: ""               # Terjemahan Indonesia
+    en: ""               # English translation
+etymology: ""            # Asal kata (opsional)
+related_words: []        # Daftar slug kata terkait, misal ["boh", "u"]
+dialect_notes: ""        # Perbedaan dialek jika ada (opsional)
+source: ""               # Sumber / referensi
+date_added: ""           # YYYY-MM-DD
+contributor: ""          # Nama Anda

@@ -1,0 +1,15 @@
+headword: "gampông"
+ipa: "/ˈɡam.pɔŋ/"
+part_of_speech: "kb"
+definitions:
+  - meaning_id: "kampung; desa (unit administrasi dan sosial terkecil di Aceh)"
+    meaning_en: "village; the smallest social and administrative unit in Acehnese society"
+examples:
+  - aceh: "Lon lahee di gampông Lam Ara."
+    id: "Saya lahir di kampung Lam Ara."
+    en: "I was born in the village of Lam Ara."
+related_words: ["meunasah", "mukim"]
+etymology: "Cognate dengan Melayu 'kampung'"
+source: "Kamus Aceh–Indonesia, Pusat Bahasa 2001"
+date_added: "2025-01-01"
+contributor: "Tim Kamus Aceh (contoh)"

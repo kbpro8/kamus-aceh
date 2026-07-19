@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: Daftar A–Z
+description: Telusuri semua entri kamus Aceh secara alfabetis.
+permalink: /browse/
+---
+<h1 style="font-size:1.6rem;color:var(--accent);margin-bottom:1.5rem;">Daftar A–Z</h1>
+
+{% set byLetter = entries | byLetter %}
+
+<nav class="az-nav" aria-label="Navigasi huruf">
+  {% for letter, items in byLetter %}
+  <a href="#letter-{{ letter }}">{{ letter }}</a>
+  {% endfor %}
+</nav>
+
+{% for letter, items in byLetter %}
+<section class="letter-group" id="letter-{{ letter }}">
+  <h2 class="letter-heading">{{ letter }}</h2>
+  <ul class="entry-list">
+    {% for entry in items %}
+    <li>
+      <a href="{{ ('/entries/' + (entry.headword | slugify) + '/') | url }}">{{ entry.headword }}</a>
+      <span style="color:var(--muted);font-size:.85rem;"> — {{ entry.definitions[0].meaning_id }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

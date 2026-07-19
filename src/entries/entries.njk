@@ -1,0 +1,75 @@
+---
+pagination:
+  data: entries
+  size: 1
+  alias: entry
+permalink: "/entries/{{ entry.headword | slugify }}/"
+layout: base.njk
+eleventyComputed:
+  title: "{{ entry.headword }}"
+---
+<article class="entry-detail" data-pagefind-body>
+  <div class="entry-header">
+    <h1 class="headword" data-pagefind-meta="title">{{ entry.headword }}</h1>
+    <div class="entry-meta">
+      {% if entry.ipa %}<span>{{ entry.ipa }}</span>{% endif %}
+      {% if entry.part_of_speech %}<span>{{ entry.part_of_speech }}</span>{% endif %}
+    </div>
+  </div>
+
+  {% if entry.definitions %}
+  <section class="definitions">
+    {% for def in entry.definitions %}
+    <div class="definition-item">
+      <div class="def-number">{{ loop.index }}</div>
+      <div class="def-id">🇮🇩 {{ def.meaning_id }}</div>
+      <div class="def-en">🇬🇧 {{ def.meaning_en }}</div>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if entry.examples and entry.examples.length %}
+  <section class="examples">
+    <h3>Contoh / Examples</h3>
+    {% for ex in entry.examples %}
+    <div class="example-block">
+      <div class="example-aceh">{{ ex.aceh }}</div>
+      {% if ex.id %}<div class="example-id">{{ ex.id }}</div>{% endif %}
+      {% if ex.en %}<div class="example-en">{{ ex.en }}</div>{% endif %}
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if entry.etymology %}
+  <section class="entry-section">
+    <h3>Etimologi</h3>
+    <p>{{ entry.etymology }}</p>
+  </section>
+  {% endif %}
+
+  {% if entry.dialect_notes %}
+  <section class="entry-section">
+    <h3>Catatan Dialek</h3>
+    <p>{{ entry.dialect_notes }}</p>
+  </section>
+  {% endif %}
+
+  {% if entry.related_words and entry.related_words.length %}
+  <section class="entry-section">
+    <h3>Kata Terkait</h3>
+    <div class="related-words">
+      {% for slug in entry.related_words %}
+      <a href="{{ ('/entries/' + slug + '/') | url }}">{{ slug }}</a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <div class="entry-source">
+    {% if entry.source %}<span>Sumber: {{ entry.source }}</span>{% endif %}
+    {% if entry.contributor %} &middot; <span>Kontributor: {{ entry.contributor }}</span>{% endif %}
+    {% if entry.date_added %} &middot; <span>{{ entry.date_added }}</span>{% endif %}
+  </div>
+</article>
