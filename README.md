@@ -3,14 +3,14 @@
 Kamus digital terbuka untuk Bahasa Aceh — Indonesia — Inggris.
 Dibangun dengan [Eleventy](https://www.11ty.dev/) dan dihosting gratis di GitHub Pages.
 
-**Situs langsung:** `https://YOUR_USERNAME.github.io/kamus-aceh/`
+**Situs langsung:** `https://kbpro8.github.io/kamus-aceh/`
 
 ---
 
 ## Menjalankan secara lokal
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/kamus-aceh.git
+git clone https://github.com/kbpro8/kamus-aceh.git
 cd kamus-aceh
 npm install
 npm run dev        # http://localhost:8080/kamus-aceh/

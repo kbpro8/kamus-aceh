@@ -66,4 +66,4 @@ Ke depannya kami akan menambahkan [Decap CMS](https://decapcms.org/) untuk memun
 
 ## Pertanyaan?
 
-Buka [GitHub Issue](https://github.com/YOUR_USERNAME/kamus-aceh/issues) untuk pertanyaan atau diskusi.
+Buka [GitHub Issue](https://github.com/kbpro8/kamus-aceh/issues) untuk pertanyaan atau diskusi.
