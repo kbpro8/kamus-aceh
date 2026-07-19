@@ -4,14 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} — {% endif %}Kamus Aceh</title>
-  <meta name="description" content="{{ description or 'Kamus Aceh: kamus digital Bahasa Aceh–Indonesia–Inggris.' }}">
+  <meta name="description" content="{{ description or 'Kamus Aceh: kamus digital Bahasa Aceh–Indonesia–Inggris, dengan tulisan Jawi.' }}">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
   {% if pagefind %}<link href="{{ '/pagefind/pagefind-ui.css' | url }}" rel="stylesheet">{% endif %}
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <a class="site-title" href="{{ '/' | url }}">Kamus Aceh</a>
+      <a class="site-logo" href="{{ '/' | url }}">
+        <span class="site-logo-latin">Kamus Aceh</span>
+        <span class="site-logo-jawi">كاموس اچيه</span>
+      </a>
       <nav class="site-nav">
         <a href="{{ '/' | url }}">Cari</a>
         <a href="{{ '/browse/' | url }}">A–Z</a>
@@ -23,14 +31,17 @@
   <main>{{ content | safe }}</main>
 
   <footer class="site-footer">
-    <p>Konten: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> &middot; Kode: MIT &middot;
+    <p>Konten: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> &middot;
+    Kode: MIT &middot;
     <a href="https://github.com/kbpro8/kamus-aceh">GitHub</a></p>
   </footer>
 
   {% if pagefind %}
   <script src="{{ '/pagefind/pagefind-ui.js' | url }}"></script>
   <script>
-    new PagefindUI({ element: "#search", showSubResults: true });
+    new PagefindUI({ element: "#search", showSubResults: true, translations: {
+      placeholder: "Cari kata dalam Bahasa Aceh, Indonesia, atau Inggris…"
+    }});
   </script>
   {% endif %}
 </body>

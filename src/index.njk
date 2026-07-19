@@ -1,29 +1,47 @@
 ---
 layout: base.njk
 title: Beranda
-description: Kamus Aceh — kamus digital Bahasa Aceh–Indonesia–Inggris, bebas dan terbuka.
+description: Kamus Aceh — kamus digital terbuka Bahasa Aceh–Indonesia–Inggris, lengkap dengan tulisan Jawi.
 pagefind: true
 ---
+
 <section class="hero">
-  <h1>Kamus Aceh</h1>
-  <p>Kamus digital Bahasa Aceh – Indonesia – Inggris</p>
+  <div class="hero-badge">📖 Bahasa Aceh · بهاس اچيه</div>
+  <h1 class="hero-title">
+    Kamus <span>Aceh</span>
+  </h1>
+  <span class="hero-jawi">كاموس اچيه</span>
+  <p class="hero-sub">Kamus digital terbuka · Aceh – Indonesia – Inggris – Jawi</p>
 </section>
 
 <div class="search-wrap">
   <div id="search"></div>
 </div>
 
-<section>
-  <h2 style="font-size:1rem;font-family:system-ui;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem;">
-    Contoh kata
-  </h2>
-  <div class="featured-grid">
-    {% for entry in entries | randomPick(6) %}
-    <a class="entry-card" href="{{ ('/entries/' + (entry.headword | slugify) + '/') | url }}" style="display:block;text-decoration:none;color:inherit;">
-      <div class="hw">{{ entry.headword }}</div>
-      <div class="pos">{{ entry.part_of_speech }}</div>
-      <div class="gloss">{{ entry.definitions[0].meaning_id }}</div>
-    </a>
-    {% endfor %}
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-num">{{ collections.entries | length }}</div>
+    <div class="stat-label">Entri</div>
   </div>
-</section>
+  <div class="stat">
+    <div class="stat-num">3</div>
+    <div class="stat-label">Bahasa</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">Terbuka</div>
+    <div class="stat-label">Lisensi CC-BY-SA</div>
+  </div>
+</div>
+
+<p class="section-label">Contoh kata</p>
+
+<div class="featured-grid">
+  {% for entry in collections.entries | randomPick(6) %}
+  <a class="entry-card" href="{{ ('/entries/' + (entry.data.headword | slugify) + '/') | url }}">
+    <div class="card-hw">{{ entry.data.headword }}</div>
+    {% if entry.data.jawi %}<div class="card-jawi">{{ entry.data.jawi }}</div>{% endif %}
+    <div class="card-pos">{{ entry.data.part_of_speech }}</div>
+    <div class="card-gloss">{{ entry.data.definitions[0].meaning_id }}</div>
+  </a>
+  {% endfor %}
+</div>

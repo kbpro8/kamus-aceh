@@ -10,66 +10,73 @@ eleventyComputed:
 ---
 <article class="entry-detail" data-pagefind-body>
   <div class="entry-header">
-    <h1 class="headword" data-pagefind-meta="title">{{ entry.headword }}</h1>
+    <div class="headword-block">
+      <h1 class="headword" data-pagefind-meta="title">{{ entry.headword }}</h1>
+      {% if entry.jawi %}
+      <span class="headword-jawi" lang="ar" dir="rtl">{{ entry.jawi }}</span>
+      {% endif %}
+    </div>
     <div class="entry-meta">
-      {% if entry.ipa %}<span>{{ entry.ipa }}</span>{% endif %}
-      {% if entry.part_of_speech %}<span>{{ entry.part_of_speech }}</span>{% endif %}
+      {% if entry.ipa %}<span class="meta-ipa">{{ entry.ipa }}</span>{% endif %}
+      {% if entry.part_of_speech %}<span class="meta-tag">{{ entry.part_of_speech }}</span>{% endif %}
     </div>
   </div>
 
+  <div class="divider"></div>
+
   {% if entry.definitions %}
-  <section class="definitions">
+  <ul class="def-list">
     {% for def in entry.definitions %}
-    <div class="definition-item">
-      <div class="def-number">{{ loop.index }}</div>
+    <li class="def-item">
+      <div class="def-num">Definisi {{ loop.index }}</div>
       <div class="def-id">🇮🇩 {{ def.meaning_id }}</div>
       <div class="def-en">🇬🇧 {{ def.meaning_en }}</div>
-    </div>
+    </li>
     {% endfor %}
-  </section>
+  </ul>
   {% endif %}
 
   {% if entry.examples and entry.examples.length %}
-  <section class="examples">
-    <h3>Contoh / Examples</h3>
+  <div class="entry-section">
+    <div class="entry-section-title">Contoh / Examples</div>
     {% for ex in entry.examples %}
     <div class="example-block">
-      <div class="example-aceh">{{ ex.aceh }}</div>
-      {% if ex.id %}<div class="example-id">{{ ex.id }}</div>{% endif %}
-      {% if ex.en %}<div class="example-en">{{ ex.en }}</div>{% endif %}
+      <div class="ex-aceh">{{ ex.aceh }}</div>
+      {% if ex.id %}<div class="ex-id">🇮🇩 {{ ex.id }}</div>{% endif %}
+      {% if ex.en %}<div class="ex-en">🇬🇧 {{ ex.en }}</div>{% endif %}
     </div>
     {% endfor %}
-  </section>
+  </div>
   {% endif %}
 
   {% if entry.etymology %}
-  <section class="entry-section">
-    <h3>Etimologi</h3>
+  <div class="entry-section">
+    <div class="entry-section-title">Etimologi</div>
     <p>{{ entry.etymology }}</p>
-  </section>
+  </div>
   {% endif %}
 
   {% if entry.dialect_notes %}
-  <section class="entry-section">
-    <h3>Catatan Dialek</h3>
+  <div class="entry-section">
+    <div class="entry-section-title">Catatan Dialek</div>
     <p>{{ entry.dialect_notes }}</p>
-  </section>
+  </div>
   {% endif %}
 
   {% if entry.related_words and entry.related_words.length %}
-  <section class="entry-section">
-    <h3>Kata Terkait</h3>
+  <div class="entry-section">
+    <div class="entry-section-title">Kata Terkait</div>
     <div class="related-words">
       {% for slug in entry.related_words %}
       <a href="{{ ('/entries/' + slug + '/') | url }}">{{ slug }}</a>
       {% endfor %}
     </div>
-  </section>
+  </div>
   {% endif %}
 
   <div class="entry-source">
     {% if entry.source %}<span>Sumber: {{ entry.source }}</span>{% endif %}
-    {% if entry.contributor %} &middot; <span>Kontributor: {{ entry.contributor }}</span>{% endif %}
-    {% if entry.date_added %} &middot; <span>{{ entry.date_added }}</span>{% endif %}
+    {% if entry.contributor %}<span>Kontributor: {{ entry.contributor }}</span>{% endif %}
+    {% if entry.date_added %}<span>{{ entry.date_added }}</span>{% endif %}
   </div>
 </article>
