@@ -80,3 +80,20 @@ eleventyComputed:
     {% if entry.date_added %}<span>{{ entry.date_added }}</span>{% endif %}
   </div>
 </article>
+
+{% set related = entries | relatedEntries(entry.fileSlug, 5) %}
+{% if related.length %}
+<section class="related-section">
+  <p class="section-label">Entri serupa</p>
+  <div class="related-cards">
+    {% for r in related %}
+    <a class="related-card" href="{{ ('/entries/' + r.fileSlug + '/') | url }}">
+      <span class="rc-hw">{{ r.headword }}</span>
+      {% if r.jawi %}<span class="rc-jawi" lang="ar" dir="rtl">{{ r.jawi }}</span>{% endif %}
+      <span class="rc-pos">{{ r.part_of_speech }}</span>
+      <span class="rc-gloss">{{ r.definitions[0].meaning_id }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

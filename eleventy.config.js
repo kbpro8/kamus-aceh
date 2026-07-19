@@ -51,6 +51,25 @@ module.exports = function (eleventyConfig) {
     return copy.slice(0, n);
   });
 
+  // Return up to `n` related entries: same first letter, excluding current fileSlug
+  eleventyConfig.addFilter("relatedEntries", (allEntries, currentSlug, n) => {
+    const current = (allEntries || []).find((e) => e.fileSlug === currentSlug);
+    const firstLetter = current
+      ? (current.headword || "")[0].toUpperCase()
+      : "";
+    const pool = (allEntries || []).filter(
+      (e) =>
+        e.fileSlug !== currentSlug &&
+        (e.headword || "")[0].toUpperCase() === firstLetter
+    );
+    // shuffle then slice
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    return pool.slice(0, n || 5);
+  });
+
   return {
     dir: {
       input: "src",
