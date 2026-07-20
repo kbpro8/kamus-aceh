@@ -1,19 +1,36 @@
-headword: timang
-jawi: ''
+---
+headword: "timang"
+jawi: ""
 alt_spelling: []
-ipa: ''
-part_of_speech: ''
+ipa: "/ti.maŋ/"
+part_of_speech: "a"
+language_uncertain: false
 definitions:
-- meaning_id: seri
-  meaning_en: draw
-- meaning_id: timbang
-  meaning_en: weigh
-examples: []
-etymology: ''
+  - meaning_id: "1 adil; – that geumeuhukôm ‘ia menghukum – sekali (ia seorang yg adil)’;"
+    meaning_en: ""
+  - meaning_id: "2 imbang, tepat, tidak berat sebelah:"
+    meaning_en: ""
+  - meaning_id: "3 tepat di tengah-tengah:"
+    meaning_en: ""
+  - meaning_id: "4 penuh perhitungan; dipikirkan matang-matang:"
+    meaning_en: ""
+examples:
+  - aceh: "céng nyang hana – bèk tapakek le"
+    jawi: ""
+    id: "‘timbangan yg tidak – jangan dipakai lagi’;"
+    en: ""
+  - aceh: "cot uroe –, mata uroe pah di ateuh ule ‘–"
+    jawi: ""
+    id: "tengah hari, matahari tepat di atas kepala’;"
+    en: ""
+  - aceh: "sigohlom neujaweub neu— dilè"
+    jawi: ""
+    id: "‘sebelum menjawab, – terlebih dahulu’"
+    en: ""
+etymology: ""
 related_words: []
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 18; p. 84.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: ''
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — timang', URL: https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/T?page=4 (diakses 20 Juli 2026)"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 1 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/T?page=4). Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."

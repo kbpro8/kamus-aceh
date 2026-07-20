@@ -1,21 +1,24 @@
-headword: sie
-jawi: ''
+---
+headword: "sie"
+jawi: ""
 alt_spelling: []
-ipa: ''
-part_of_speech: ''
+ipa: "/siy/"
+part_of_speech: "n"
+language_uncertain: false
 definitions:
-- meaning_id: sembelih, potong
-  meaning_en: butcher, slaughter
-- meaning_id: sembelih
-  meaning_en: slaughter
-- meaning_id: daging
-  meaning_en: meat
-examples: []
-etymology: ''
+  - meaning_id: "1 n daging sembelihan yg dijadikan makanan:"
+    meaning_en: ""
+  - meaning_id: "2 menyembelih atau memotong:"
+    meaning_en: ""
+examples:
+  - aceh: "– rusa leubèh mangat nibak – keubeu"
+    jawi: ""
+    id: "‘– rusa lebih enak daripada – kerbau’;"
+    en: ""
+etymology: ""
 related_words: []
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 41; p. 63; p. 71.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: ''
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — sie', URL: https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/S?page=3 (diakses 20 Juli 2026)"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 1 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/S?page=3). Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."

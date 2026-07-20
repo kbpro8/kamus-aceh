@@ -1,17 +1,36 @@
-headword: pruet
-jawi: ''
+---
+headword: "pruet"
+jawi: ""
 alt_spelling: []
-ipa: ''
-part_of_speech: ''
+ipa: "/pruət/"
+part_of_speech: "n"
+language_uncertain: false
 definitions:
-- meaning_id: perut
-  meaning_en: stomach, belly
-examples: []
-etymology: ''
+  - meaning_id: "1 bagian tubuh di bawah rongga dada:"
+    meaning_en: ""
+  - meaning_id: "2 alat pencernaan makanan di dalam rongga, di bawah rongga dada (terutama yg berupa kantung tempat mencernakan makanan dan usus):"
+    meaning_en: ""
+  - meaning_id: "3 kas makanan (rezeki, nafkah):"
+    meaning_en: ""
+  - meaning_id: "4 (ki) kandungan (rahim):"
+    meaning_en: ""
+examples:
+  - aceh: "--jih raya that"
+    jawi: ""
+    id: "‘perutnya besar sekali’;"
+    en: ""
+  - aceh: "lon sakét – buno bungoh"
+    jawi: ""
+    id: "‘saya sakit– tadi pagi’;"
+    en: ""
+  - aceh: "meunyo urusan --, malè-malè pih han tapako"
+    jawi: ""
+    id: "‘kalau sudah urusan --, malu pun sudah tidak peduli’;"
+    en: ""
+etymology: ""
 related_words: []
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 29.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: ''
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — pruet', URL: https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/P?page=5 (diakses 20 Juli 2026)"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 1 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/P?page=5). Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."

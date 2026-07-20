@@ -1,20 +1,21 @@
-headword: tikôh
-jawi: ''
-alt_spelling:
-- tikôih
-ipa: ''
-part_of_speech: ''
+---
+headword: "tikôh"
+jawi: ""
+alt_spelling: []
+ipa: "/ti.koh/"
+part_of_speech: "n"
+language_uncertain: false
 definitions:
-- meaning_id: tikus
-  meaning_en: rat, mouse
-- meaning_id: tikus
-  meaning_en: mouse, rat
-examples: []
-etymology: ''
+  - meaning_id: "b i n a t a n g pengerat, termasuk jenis Muridae, memiliki sepasang gigi seri berbentuk pahat, umumnya berwarna hitam atau kelabu, tetapi ada juga yg berwarna putih; tikus"
+    meaning_en: ""
+  - meaning_id: "tikus"
+    meaning_en: ""
+examples:
+  []
+etymology: ""
 related_words: []
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 5; p. 108.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: Spelling/dialect variant(s) explicitly discussed in the Introduction.
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — tikôh', URL: https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/T?page=3 (diakses 20 Juli 2026); halaman tambahan: T?page=4"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 2 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/T?page=3, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/T?page=4). Ditemukan pada beberapa halaman; definisi dan contoh digabungkan. Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."

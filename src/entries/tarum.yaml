@@ -1,17 +1,19 @@
-headword: tarum
-jawi: ''
+---
+headword: "tarum"
+jawi: ""
 alt_spelling: []
-ipa: ''
-part_of_speech: ''
+ipa: "/ta.rum/"
+part_of_speech: "n"
+language_uncertain: false
 definitions:
-- meaning_id: kadal
-  meaning_en: wild lizard
-examples: []
-etymology: ''
+  - meaning_id: "binatang kecil, melata, berkaki empat dan berekor, tubuhnya bersisik berkilat, berwarna hijau kekuning-kuningan (Tachyadromus seclineatus); kadal;"
+    meaning_en: ""
+examples:
+  []
+etymology: ""
 related_words: []
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 107.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: ''
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — tarum', URL: https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/T?page=2 (diakses 20 Juli 2026)"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 1 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/T?page=2). Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."

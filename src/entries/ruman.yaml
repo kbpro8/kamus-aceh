@@ -1,18 +1,19 @@
-headword: ruman
-jawi: ''
+---
+headword: "ruman"
+jawi: ""
 alt_spelling: []
-ipa: ''
-part_of_speech: ''
+ipa: "/ru.man/"
+part_of_speech: "n"
+language_uncertain: false
 definitions:
-- meaning_id: rupa, muka
-  meaning_en: appearance, face
-examples: []
-etymology: ''
-related_words:
-- rupa
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 28.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: ''
+  - meaning_id: "bagian depan dari kepala, air muka, rupa muka; muka; paras"
+    meaning_en: ""
+examples:
+  []
+etymology: ""
+related_words: []
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — ruman', URL: https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=18 (diakses 20 Juli 2026); halaman tambahan: R?page=11, R?page=12, R?page=13, R?page=14, R?page=15, R?page=16, R?page=17, R?page=18, R?page=19, R?page=3, R?page=4, R?page=5, R?page=6, R?page=7, R?page=8, R?page=9"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 17 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=10, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=11, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=12, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=13, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=14, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=15, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=16, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=17, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=18, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=19, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=3, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=4, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=5, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=6, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=7, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=8, https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/R?page=9). Ditemukan pada beberapa halaman; definisi dan contoh digabungkan. Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."

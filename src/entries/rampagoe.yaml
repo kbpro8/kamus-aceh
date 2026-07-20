@@ -1,17 +1,21 @@
-headword: rampagoe
-jawi: ''
+---
+headword: "rampagoe"
+jawi: ""
 alt_spelling: []
-ipa: ''
-part_of_speech: ''
+ipa: "/ram.pa.gɔə/"
+part_of_speech: "n"
+language_uncertain: false
 definitions:
-- meaning_id: pengepit pinang sirih
-  meaning_en: betelnut pincers
-examples: []
-etymology: ''
+  - meaning_id: "1 gunting tajam sebelah dan sendinya ada di ujung, digunakan untuk membelah pinang, gambir, dsb yg terdapat di dalam ramuan sirih; kacip;"
+    meaning_en: ""
+  - meaning_id: "2 kalajengking"
+    meaning_en: ""
+examples:
+  []
+etymology: ""
 related_words: []
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 66; p. 74.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: ''
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — rampagoe', URL: https://kamusbbpa.kemendikdasmen.go.id/kamus/Aceh/R (diakses 20 Juli 2026)"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 1 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/kamus/Aceh/R). Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."

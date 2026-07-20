@@ -1,17 +1,21 @@
-headword: sugôt
-jawi: ''
+---
+headword: "sugôt"
+jawi: ""
 alt_spelling: []
-ipa: ''
-part_of_speech: ''
+ipa: "/su.got/"
+part_of_speech: "n"
+language_uncertain: false
 definitions:
-- meaning_id: sisir
-  meaning_en: comb
-examples: []
-etymology: ''
+  - meaning_id: "ikan karang laut panjangnya mencapai 50 cm, warnanya bervariasi, bergaris horizontal putih dan hitam, bibir dan siripnya berwarna kekuningan (Plectorhinchus lineatus)"
+    meaning_en: ""
+  - meaning_id: "alat untuk merapikan atau mengatur rambut, terbuat dari tanduk, plastik, atau logam, bergerigi tipis dan rapat; sisir"
+    meaning_en: ""
+examples:
+  []
+etymology: ""
 related_words: []
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 77.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: ''
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — sugôt', URL: https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/S?page=5 (diakses 20 Juli 2026)"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 1 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/S?page=5). Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."

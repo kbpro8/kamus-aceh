@@ -1,17 +1,22 @@
-headword: sukat
-jawi: ''
+---
+headword: "sukat"
+jawi: ""
 alt_spelling: []
-ipa: ''
-part_of_speech: ''
+ipa: "/su.kat/"
+part_of_speech: "v"
+language_uncertain: false
 definitions:
-- meaning_id: sukat
-  meaning_en: measure (volume)
-examples: []
-etymology: ''
+  - meaning_id: "melakukan sukat; mengukur; menimbang; menyukat, menakar (dng ukuran isi):"
+    meaning_en: ""
+examples:
+  - aceh: "ta– breuh keu gopnyan limöng arè"
+    jawi: ""
+    id: "‘takarlah beras untuknya lima bambu beras’"
+    en: ""
+etymology: ""
 related_words: []
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 84.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: ''
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — sukat', URL: https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/S?page=5 (diakses 20 Juli 2026)"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 1 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/S?page=5). Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."

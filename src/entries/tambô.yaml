@@ -1,19 +1,19 @@
-headword: tambô
-jawi: ''
+---
+headword: "tambô"
+jawi: ""
 alt_spelling: []
-ipa: ''
-part_of_speech: ''
+ipa: "/tam.bo/"
+part_of_speech: "n"
+language_uncertain: false
 definitions:
-- meaning_id: tambur
-  meaning_en: drum for summons
-- meaning_id: tambur, beduk
-  meaning_en: drum
-examples: []
-etymology: ''
+  - meaning_id: "gendang besar yg menghasilkan bunyi dr pukulan kayu, terbuat dr batang pohon lontar (bak iboh), kulit lembu, dan tali rotan, berongga, bentuknya bulat panjang, pd bagian tengahnya agak besar, sedangkan bagian depannya ditutup dng kulit, umumnya berdiameter 75 cm, digunakan untuk memanggil orang untuk suatu pertemuan, melaksanakan ibadah di masjid, isyarat bahwa ada orang yg meninggal di desa, pengumuman gotong royong, serta dahulu untuk pembangkit semangat di medan perang"
+    meaning_en: ""
+examples:
+  []
+etymology: ""
 related_words: []
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 16; p. 19.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: ''
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — tambô', URL: https://kamusbbpa.kemendikdasmen.go.id/kamus/Aceh/T (diakses 20 Juli 2026)"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 1 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/kamus/Aceh/T). Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."

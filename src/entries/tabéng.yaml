@@ -1,17 +1,21 @@
-headword: tabéng
-jawi: ''
+---
+headword: "tabéng"
+jawi: ""
 alt_spelling: []
-ipa: ''
-part_of_speech: ''
+ipa: "/ta.beŋ/"
+part_of_speech: "n"
+language_uncertain: false
 definitions:
-- meaning_id: tabir
-  meaning_en: screen, curtain
-examples: []
-etymology: ''
+  - meaning_id: "1 kain penyekat ruangan atau pembatas antara tamu laki-laki dan perempuan pd acara kenduri, hanya satu warna, biasanya kuning, hijau, atau biru, diikat di tenda; tabing;"
+    meaning_en: ""
+  - meaning_id: "2 kain penutup atau penghias dinding rumah, berwarna-warni lurus vertikal"
+    meaning_en: ""
+examples:
+  []
+etymology: ""
 related_words: []
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 78.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: ''
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — tabéng', URL: https://kamusbbpa.kemendikdasmen.go.id/kamus/Aceh/T (diakses 20 Juli 2026)"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 1 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/kamus/Aceh/T). Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."

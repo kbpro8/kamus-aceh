@@ -1,17 +1,28 @@
-headword: seudang
-jawi: ''
+---
+headword: "seudang"
+jawi: ""
 alt_spelling: []
-ipa: ''
-part_of_speech: ''
+ipa: "/sɯ.daŋ/"
+part_of_speech: "a"
+language_uncertain: false
 definitions:
-- meaning_id: sedang
-  meaning_en: medium
-examples: []
-etymology: ''
+  - meaning_id: "1 muda:"
+    meaning_en: ""
+  - meaning_id: "2 sedang, tak lebih atau kurang, cocok:"
+    meaning_en: ""
+examples:
+  - aceh: "dara barô nyan cukôp that ceudah, umu pih --, tari han ban"
+    jawi: ""
+    id: "‘pengantin wanita itu cukup cantik, umurnya pun masih --, sangat memesona’;"
+    en: ""
+  - aceh: "cuba tangui bajè nyo, – bak gata"
+    jawi: ""
+    id: "‘coba kamu pakai baju ini, – sekali utk kamu’"
+    en: ""
+etymology: ""
 related_words: []
-dialect_notes: ''
-source: 'Daud, Bukhari & Mark Durie. Kamus Basa Acèh = Kamus Bahasa Aceh: Acehnese–Indonesian–English Thesaurus.
-  Pacific Linguistics C-151, 1999, p. 86.'
-date_added: '2026-07-20'
-contributor: AI-extracted — needs human review
-extraction_notes: ''
+dialect_notes: ""
+source: "Kamus Bahasa Aceh Daring (Balai Bahasa Provinsi Aceh), 'Entri huruf — seudang', URL: https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/S?page=2 (diakses 20 Juli 2026)"
+date_added: "2026-07-20"
+contributor: "AI-extracted — needs human review"
+extraction_notes: "Diekstrak dari 1 halaman sumber (https://kamusbbpa.kemendikdasmen.go.id/index.php/kamus/Aceh/S?page=2). Tidak ada bentuk Jawi dalam sumber — dibiarkan kosong sesuai aturan."
