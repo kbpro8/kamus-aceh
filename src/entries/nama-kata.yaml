@@ -1,0 +1,20 @@
+headword: "kata-aceh"
+jawi: "کات اچيه"
+alt_spelling:
+  - "ejaan-alternatif"
+ipa: "/transkripsi-ipa/"
+part_of_speech: "kb"
+definitions:
+  - meaning_id: "Arti dalam Bahasa Indonesia"
+    meaning_en: "Meaning in English"
+examples:
+  - aceh: "Kalimat dalam Bahasa Aceh."
+    id: "Terjemahan Indonesia."
+    en: "English translation."
+etymology: "Asal usul kata"
+related_words:
+  - "slug-kata-lain"
+dialect_notes: "Catatan dialek jika ada"
+source: "Nama buku atau sumber"
+date_added: "2025-01-01"
+contributor: "Iqbal Hafidh"
